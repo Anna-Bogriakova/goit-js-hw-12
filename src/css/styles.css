@@ -22,6 +22,34 @@ body {
   padding: 20px;
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo svg {
+  width: 100px;
+  height: 100px;
+  fill: #2a2a2a;
+  transition:
+    fill 0.3s ease,
+    transform 0.3s ease;
+}
+
+.logo:hover svg,
+.logo:focus svg {
+  transform: scale(1.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -55,7 +83,7 @@ button:hover {
   justify-content: center;
 }
 
-.gallery a {
+.gallery li {
   display: block;
   width: 300px;
 }
