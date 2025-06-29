@@ -53,8 +53,7 @@ form.addEventListener('submit', async e => {
     }
 
     createGallery(data.hits);
-
-    if (data.hits.length < PER_PAGE) {
+    if (totalHits <= PER_PAGE || data.hits.length < PER_PAGE) {
       iziToast.info({
         title: 'End',
         message: `Це всі результати за запитом (показано ${data.hits.length}).`,
